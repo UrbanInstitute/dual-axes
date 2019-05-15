@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href = "css/main.css">
+<body>
+	
+<div id = "chart"></div>
+
+<div id = "leftInputs">
+  <div class = "inputRow minLeft">
+    <div class = "label">Left axis minimum</div>
+    <input id = "minLeft" type = "range" min = "-20" max = "10" value = "0">
+    <span>0</span>
+  </div>
+
+  <div class = "inputRow maxLeft">
+    <div class = "label">Left axis maximum</div>
+    <input id = "maxLeft" type = "range" min = "1" max = "80" value = "24">
+    <span>24</span>
+  </div>
+</div>
+
+<div id = "rightInputs">
+  <div class = "inputRow minRight">
+    <div class = "label">Right axis minimum</div>
+    <input id = "minRight" type = "range" min = "-200" max = "100" value = "0">
+    <span>0</span>
+  </div>
+
+  <div class = "inputRow maxRight">
+    <div class = "label">Right axis maximum</div>
+    <input id = "maxRight" type = "range" min = "1" max = "700" value = "200">
+    <span>200</span>
+  </div>
+</div>
+
+<div class = "buttonContainer">
+  <div class = "buttonRow blue">
+    <div class = "buttonLabel">Blue series:</div>
+    <div class = "button Left bar active">Bar</div>
+    <div class = "button Left line">Line</div>
+    <div class = "button Left none">None</div>
+  </div>
+  <div class = "buttonRow yellow">
+    <div class = "buttonLabel">Yellow series:</div>
+    <div class = "button Right bar active">Bar</div>
+    <div class = "button Right line">Line</div>
+    <div class = "button Right none">None</div>
+  </div>
+
+</div>
+
+
+<!-- load the d3.js library -->    	
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script src = "js/main.js"></script>
+</body>
